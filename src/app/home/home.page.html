@@ -8,104 +8,44 @@
 
 <ion-content [fullscreen]="true">
 
-    <ion-row>
-      
-      <!-- coluna da esquerda -->
-      <ion-col size="2">
-        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
-
-      </ion-col>
-      
-      <!-- coluna da direita -->
-      <ion-col size="10">
-        <!-- nome -->
-        <ion-row>
-          <ion-col size="12">
-            <ion-item lines="none">
-              <ion-label><h1>{{ this.perfil.nome }}</h1></ion-label>
-            </ion-item>
-          </ion-col>
-        </ion-row>
-
-        <!-- profissão -->
-        <ion-row>
-          <ion-col size="12">
-             <ion-item lines="none">
-              <ion-label><h2>{{ this.perfil.profissao}}</h2></ion-label>
-             </ion-item>
-          </ion-col>
-        </ion-row>
-
-      <!-- botão -->
-      <ion-row>
-        <ion-col size="12">
-           <ion-item lines="none">
-            <ion-label>
-              <ion-button>Seguir</ion-button>
-            <ion-button>Mensagem</ion-button>
-          </ion-label>
-           </ion-item>
-        </ion-col>
-      </ion-row>
-      </ion-col>
-    </ion-row>
-
-      <!-- seguidores, curtidas e amigos-->
-
-      
-    <ion-grid [fixed]="true">
-      <ion-row>
-
-        <ion-col size="4" class="metrica">
-          <ion-label><h3>{{ this.metricas_sociais.curtidas}}</h3>
-          Curtidas</ion-label>
-        </ion-col>
-
-        <ion-col size="4" class="metrica">
-          <ion-label><h3>{{ this.metricas_sociais.seguidores}}</h3>
-          Seguidores</ion-label>
-        </ion-col>
-
-        <ion-col size="4" class="metrica">
-          <ion-label><h3>{{ this.metricas_sociais.amigos}}</h3>
-          Amigos
-        </ion-label>
-        </ion-col>
-
-      </ion-row>
-    </ion-grid>
-
-
-<!-- Sobre -->
-<ion-row>
-  <ion-col size="12">
-     <ion-item lines="bold">
-      <ion-label><h1>Sobre</h1>{{ this.perfil.biografia}}</ion-label>
-     </ion-item>
-  </ion-col>
-</ion-row>
-
-
- <!-- coluna da esquerda -->
-
- <ion-row>
-
-  <ion-col size="4">
-
-    <ion-item lines="none">
-      <ion-avatar>
-        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-      </ion-avatar>
-      <ion-label></ion-label>
-    </ion-item>
-  </ion-col>
   
-   <!-- coluna da direita -->
-   <ion-col size="8">
-    <h1>Juliana</h1>
-   </ion-col>
- </ion-row>
+  <ion-grid>
+    <ion-button color="warning" (click)="exibir(1)">C</ion-button> 
+    <ion-button color="warning" (click)="exibir(2)">+/-</ion-button>
+    <ion-button color="warning" (click)="exibir(3)">⌫</ion-button>
+    <ion-button color="warning" (click)="exibir(4)">/</ion-button>
+</ion-grid>
 
+
+
+<ion-grid>
+    <ion-button color="danger" (click)="exibir(5)">7</ion-button> 
+    <ion-button color="danger" (click)="exibir(6)">8</ion-button>
+    <ion-button color="danger" (click)="exibir(7)">9</ion-button>
+    <ion-button color="danger" (click)="exibir(8)">*</ion-button>
+</ion-grid>
+   
+      
+<ion-grid>
+    <ion-button color="danger" (click)="exibir(9)">4</ion-button> 
+    <ion-button color="danger" (click)="exibir(10)">5</ion-button>
+    <ion-button color="danger"(click)="exibir(11)">6</ion-button>
+    <ion-button color="danger" (click)="exibir(12)">-</ion-button>
+</ion-grid>
+   
+
+<ion-grid>
+    <ion-button (click)="exibir(13)">1</ion-button> 
+    <ion-button (click)="exibir(14)">2</ion-button>
+    <ion-button (click)="exibir(15)">3</ion-button>
+    <ion-button (click)="exibir(16)">+</ion-button>
+</ion-grid>
+   
+<ion-grid>
+    <ion-button (click)="exibir(13)">0</ion-button> 
+    <ion-button (click)="exibir(14)">=</ion-button>
+</ion-grid>
+   
 
 
 </ion-content>
