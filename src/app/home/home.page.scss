@@ -1,28 +1,13 @@
-ion-grid{
-background-color: rgb(184, 184, 184);
-  width: 300px;
+
+.fundo{
+  --background:rgb(44, 44, 44);
 }
 
-h1{
-  text-align: center;
-  font-size: 29px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-ion-button{
-  width: 20px;
-  font-size: 20px;
-  padding-left: 13px;
-}
-
-#resultado{
-  background-color: rgb(255, 255, 255);
-  color: rgb(175, 18, 18);
-  width: 300px;
-  height: 150px;
-  text-align: right;
-  display: flex;
-  justify-content: center;
+.resultado{
+  color: rgb(0, 0, 0);
+  background-color: rgb(253, 252, 252);
+  height: 40vh;
+  width:100%;
 }
 
 
