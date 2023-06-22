@@ -50,7 +50,7 @@ export class HomePage {
     this.numero = 'operator';
   }
 
-  // Mostrar o resultado
+  // Mostra o resultado
   calcular(){
     this.v2 = eval('' + this.v1 + this.operador + '(' + this.v2 + ')');
     this.v1 = 0;
