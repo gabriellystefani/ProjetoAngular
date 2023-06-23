@@ -5,13 +5,13 @@ import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-princesa-peach',
-  templateUrl: './princesa-peach.page.html',
-  styleUrls: ['./princesa-peach.page.scss'],
+  selector: 'app-super-mario',
+  templateUrl: './super-mario.page.html',
+  styleUrls: ['./super-mario.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule, RouterLink]
 })
-export class PrincesaPeachPage implements OnInit {
+export class SuperMarioPage implements OnInit {
 
   constructor() { }
 
