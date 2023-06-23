@@ -74,3 +74,4 @@ export class HomePage {
     this.decimals = 0;
   }
 	}
+  
