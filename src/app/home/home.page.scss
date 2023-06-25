@@ -1,10 +1,11 @@
 .fundo {
-  --background: url("https://wallpaperaccess.com/full/1924793.jpg") no-repeat center center / cover;
+  --background: url("https://images5.alphacoders.com/981/981660.jpg") no-repeat center center / cover;
 }
 
 ion-button {
-  --background: #d6d6d6;
+  --background: #ffffff;
   --color: #000000;
+  
 }
 
 
@@ -12,12 +13,8 @@ ion-button {
 h1{
   color: rgb(0, 0, 0);
   text-align: center;
-  font-weight: bold;
+  font-size: 30px;
+  font-family: cursive;
 }
 
-.texto{
-  display: flex;
-  justify-content: center;
-  text-align: center;
 
-}

@@ -2,19 +2,29 @@
 
 <ion-content [fullscreen]="true" class="fundo">
   
+  
+  
+  <ion-row>
+    <ion-col style="text-align: center; top: 60px;">
+<h1>Welcome! </h1>
+ <p style="font-family:Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold;">
+  Conheça os personagens de Super Mario.
+</p>
+    </ion-col>
+  </ion-row>
 
 <ion-tabs>
   <ion-tab-bar slot="bottom">
     <ion-tab-button routerLink="/home" tab="home">
-      <ion-icon name="home"></ion-icon>
+      <ion-icon color="dark"  name="home"></ion-icon>
       Home
     </ion-tab-button>
     <ion-tab-button routerLink="/cadastrar" tab="menu">
-      <ion-icon name="person"></ion-icon>
+      <ion-icon color="dark" name="person"></ion-icon>
       Menu
     </ion-tab-button>
     <ion-tab-button routerLink="/personagens"  tab="characters">
-    <ion-icon name="search"></ion-icon>
+    <ion-icon  color="dark" name="search"></ion-icon>
       Personagens
     </ion-tab-button>
   </ion-tab-bar>

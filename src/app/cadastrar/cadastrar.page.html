@@ -1,18 +1,16 @@
 
 <ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-button routerLink="/home">
-      <ion-icon slot="icon-only" name="home"></ion-icon>
+  <ion-buttons   slot="start">
+    <ion-button color="dark" routerLink="/home">
+      <ion-icon  slot="icon-only" name="home"></ion-icon>
     </ion-button>
   </ion-buttons>
 
-  <ion-buttons slot="end">
-    <ion-button routerLink="/personagens">
+  <ion-buttons  slot="end">
+    <ion-button color="dark"  routerLink="/personagens">
       <ion-icon slot="icon-only" name="search"></ion-icon>
     </ion-button>
   </ion-buttons>
-
-  <ion-title>Icon Buttons</ion-title>
 </ion-toolbar>
 
 
@@ -83,7 +81,7 @@
             </ion-input>
               
     
-                    <ion-button (click)="setOpen(true)">Finalizar</ion-button>
+                    <ion-button color="danger" style="width: 200px; " (click)="setOpen(true)">Finalizar</ion-button>
 <ion-alert
   [isOpen]="isAlertOpen"
   header="Atenção"
