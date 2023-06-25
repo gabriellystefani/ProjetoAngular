@@ -1,16 +1,23 @@
 
 
 <ion-content [fullscreen]="true" class="fundo">
- 
-<section>
-  <h1>Welcome!</h1>
-  <p>Ao aplicativo de Personagens da Nintendo.
-</section>
+  
 
-<ion-row>
-  <ion-col class="botao">
-    <ion-button  routerLink="/menu">Menu</ion-button>  
-  </ion-col>
-</ion-row>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="/home" tab="home">
+      <ion-icon name="home"></ion-icon>
+      Home
+    </ion-tab-button>
+    <ion-tab-button routerLink="/cadastrar" tab="menu">
+      <ion-icon name="person"></ion-icon>
+      Menu
+    </ion-tab-button>
+    <ion-tab-button routerLink="/personagens"  tab="characters">
+    <ion-icon name="search"></ion-icon>
+      Personagens
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
 
 </ion-content>

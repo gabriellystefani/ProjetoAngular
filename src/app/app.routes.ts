@@ -10,10 +10,7 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
-  {
-    path: 'menu',
-    loadComponent: () => import('./menu/menu.page').then( m => m.MenuPage)
-  },
+  
   {
     path: 'princesa-peach',
     loadComponent: () => import('./princesa-peach/princesa-peach.page').then( m => m.PrincesaPeachPage)
@@ -70,4 +67,13 @@ export const routes: Routes = [
     path: 'sobre',
     loadComponent: () => import('./sobre/sobre.page').then( m => m.SobrePage)
   },
+  {
+    path: 'personagens',
+    loadComponent: () => import('./personagens/personagens.page').then( m => m.PersonagensPage)
+  },
+  {
+    path: 'cadastrar',
+    loadComponent: () => import('./cadastrar/cadastrar.page').then( m => m.CadastrarPage)
+  },
+ 
 ];

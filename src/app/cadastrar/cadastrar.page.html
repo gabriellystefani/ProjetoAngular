@@ -1,0 +1,105 @@
+
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button routerLink="/home">
+      <ion-icon slot="icon-only" name="home"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-buttons slot="end">
+    <ion-button routerLink="/personagens">
+      <ion-icon slot="icon-only" name="search"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+  <ion-title>Icon Buttons</ion-title>
+</ion-toolbar>
+
+
+
+
+
+
+
+
+
+<ion-content [fullscreen]="true" class="fundo">
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="12" size-lg="8" size-xl="6" class="full-height">
+
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+        <h1>
+          Cadastre-se Para Receber Novidades!
+        </h1> 
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+
+          <ion-card>
+            <ion-card-content>
+
+
+      
+              <ion-input
+              type="email"
+              fill="outline"
+              label="Email"
+              labelPlacement="floating"
+              helperText="Digite um Email Válido"
+              errorText="Email Inválido"
+              ngModel
+              email
+            ></ion-input>
+
+
+            <ion-input
+            type="usuario"
+            label="Usúario"
+            labelPlacement="floating"
+            errorText="Usúario Inválido"
+            ngModel
+            usuario
+          ></ion-input>
+
+            <ion-input
+              label="Senha"
+              type="password"
+              labelPlacement="floating"
+              ngModel
+              senha
+            >
+            </ion-input>
+
+            <ion-input
+              label="Confirmar Senha"
+              type="password"
+              labelPlacement="floating"
+              ngModel
+              confirmar senha
+            >
+            </ion-input>
+              
+    
+                    <ion-button (click)="setOpen(true)">Finalizar</ion-button>
+<ion-alert
+  [isOpen]="isAlertOpen"
+  header="Atenção"
+  subHeader="Obrigada pelo Cadastro."
+  message="Receberá Nossas Novidades em Breve!"
+  [buttons]="alertButtons"
+  (didDismiss)="setOpen(false)"
+></ion-alert>
+    
+            </ion-card-content>
+          </ion-card>
+          
+        </ion-col>
+      </ion-row>
+
+      
+    </ion-col>
+  </ion-row>
+</ion-content>
