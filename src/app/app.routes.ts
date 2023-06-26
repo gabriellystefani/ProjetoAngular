@@ -75,5 +75,9 @@ export const routes: Routes = [
     path: 'cadastrar',
     loadComponent: () => import('./cadastrar/cadastrar.page').then( m => m.CadastrarPage)
   },
+  {
+    path: 'waluigi',
+    loadComponent: () => import('./waluigi/waluigi.page').then( m => m.WaluigiPage)
+  },
  
 ];

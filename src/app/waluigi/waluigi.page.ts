@@ -5,13 +5,13 @@ import { IonicModule } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-donkey-kong',
-  templateUrl: './donkey-kong.page.html',
-  styleUrls: ['./donkey-kong.page.scss'],
+  selector: 'app-waluigi',
+  templateUrl: './waluigi.page.html',
+  styleUrls: ['./waluigi.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, FormsModule, RouterLink]
 })
-export class DonkeyKongPage implements OnInit {
+export class WaluigiPage implements OnInit {
 
   constructor() { }
 

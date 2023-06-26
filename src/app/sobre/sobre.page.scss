@@ -1,0 +1,44 @@
+
+.full-height{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .fundo{
+    --background: url("https://images8.alphacoders.com/130/1302522.jpg") no-repeat center center / cover;
+  }
+  
+  
+
+  h1{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+  }
+  
+p{
+    font-weight: bold;
+}
+
+  html, body, .container {
+    height: 100%;
+}
+.container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}

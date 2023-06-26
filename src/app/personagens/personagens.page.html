@@ -1,109 +1,39 @@
 <ion-toolbar>
-  <ion-buttons   slot="start">
-    <ion-button color="dark" routerLink="/cadastrar">
-      <ion-icon  slot="icon-only" name="back"></ion-icon>
-    </ion-button>
+  <ion-buttons routerLink="/cadastrar" slot="start">
+    <ion-button default-href="#" > Voltar </ion-button>
   </ion-buttons>
-
-  <ion-buttons  slot="end">
-    <ion-button color="dark"  routerLink="/home">
-      <ion-icon slot="icon-only" name="home"></ion-icon>
-    </ion-button>
+  <ion-title>Personagens</ion-title>
+  <ion-buttons routerLink="/home" slot="end">
+    <ion-button default-href="#"> Home </ion-button>
   </ion-buttons>
 </ion-toolbar>
 
 
 
+
 <ion-content [fullscreen]="true" class="fundo">
-  <ion-row size="12" style="  display: flex;" >
-    <ion-col>
 
-
-              <ion-card color="primary">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="secondary">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="tertiary">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="success">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="warning">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="danger">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="light">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="medium">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-              
-              <ion-card color="dark">
-                <ion-card-header>
-                  <ion-card-title>Card Title</ion-card-title>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                </ion-card-header>
-              
-                <ion-card-content> Card Content </ion-card-content>
-              </ion-card>
-               
-    
-            
   
 
-    </ion-col>
-  </ion-row>
+
+  <div class="container">
+    
+  <ion-card style="text-align: center;" routerLink="/super-mario" >
+    <img alt="Silhouette of mountains" src="https://wallpaper.dog/large/20520678.jpg" />
+    <ion-card-content>
+Click aqui para ver os personagens de Super Mario!
+    </ion-card-content>
+  </ion-card>
+
+</div>
+
+
+  
+
+  
+     
+  
+    
+   
+      
 </ion-content>
